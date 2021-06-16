@@ -8,7 +8,7 @@
   //}
 
   .centered {
-    @include center();
+    @include center($block: null);
   }
 
   //.row {
@@ -74,26 +74,26 @@
     flex-basis: $flex-b;
   }
 
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    &-link {
-      flex-basis: 100px;
-    }
-  }
+  //.nav {
+  //  flex-direction: row;
+  //  justify-content: flex-end;
+  //  align-items: center;
+    //&-link {
+    //  flex-basis: 100px;
+    //}
+  //}
 
-  .btn {
-    padding: 10px 30px;
-  }
+  //.btn {
+  //  padding: 10px 30px;
+  //}
 
-  .btn + .btn {
-    margin-left: 10px;
-  }
+  //.btn + .btn {
+  //  margin-left: 10px;
+  //}
 
-  .logo {
-    margin-left: initial;
-    margin-right: initial;
-  }
+  //.logo {
+  //  margin-left: initial;
+  //  margin-right: initial;
+  //}
 
 }

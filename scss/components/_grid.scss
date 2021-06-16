@@ -5,7 +5,7 @@
 .container {
   padding: 0 10px;
   @include mq("lg") {
-    @include center(1400px)
+    @include center($max-w: 1400px)
   }
 }
 
