@@ -4,12 +4,18 @@
 
 .container {
   padding: 0 10px;
+  @include mq("lg") {
+    @include center(1400px)
+  }
 }
 
 .row {
   display: flex;
   flex-direction: column;
   padding: 1em 10px;
+  @include mq("lg") {
+    flex-direction: row;
+  }
 }
 
 [class^=col] {
@@ -17,7 +23,16 @@
   flex-basis: $flex-b;
   min-height: 25px;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: $btn-radius;
+  @include mq("lg"){
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+    & + & {
+      margin-left: 10px;
+    }
+  }
 }
 
 .theme.col-1 {

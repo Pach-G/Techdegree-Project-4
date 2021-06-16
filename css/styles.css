@@ -388,11 +388,24 @@ a {
 .container {
   padding: 0 10px;
 }
+@media (min-width: 768px) {
+  .container {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .row {
   display: flex;
   flex-direction: column;
   padding: 1em 10px;
+}
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
 }
 
 [class^=col] {
@@ -401,6 +414,17 @@ a {
   min-height: 25px;
   padding: 10px;
   border-radius: 5px;
+}
+@media (min-width: 768px) {
+  [class^=col] {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
+  [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
 }
 
 .theme.col-1 {
@@ -464,7 +488,6 @@ a {
   display: flex;
   flex-direction: column;
 }
-
 .nav-link {
   text-align: center;
   border-radius: 5px;
@@ -473,7 +496,6 @@ a {
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-
 .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
@@ -541,20 +563,20 @@ a {
 /*              Images                           */
 /* ============================================= */
 .img-avatar {
+  max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  max-width: 100%;
   max-height: 100%;
 }
 
 .img-frame {
+  max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  max-width: 100%;
   padding: 13px;
   border: 1px solid #ccc;
 }
@@ -566,32 +588,10 @@ a {
 }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .row {
-    flex-direction: row;
-  }
-
-  [class^=col] {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center;
-  }
-
-  [class^=col] + [class^=col] {
-    margin-left: 10px;
   }
 
   .col-1 {
@@ -647,7 +647,6 @@ a {
     justify-content: flex-end;
     align-items: center;
   }
-
   .nav-link {
     flex-basis: 100px;
   }

@@ -1,20 +1,23 @@
 
 //    Mixins
 // ==============
+@mixin center($max-w: null) {
+  max-width: $max-w;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// Media queries
 
 @mixin mq($break) {
   $value: map-get($breakpoints, $break);
-  $sm: map-get($breakpoints, 'sm');
 
   @if $value == null {
     @error "`#{$break}` is not a valid breakpoint name.";
   }
 
-  @else if $value < $sm {
-    @media (max-width: $value) {
-      @content;
-    }
-  }
   @else {
     @media (min-width: $value) {
       @content;

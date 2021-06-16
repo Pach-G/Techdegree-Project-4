@@ -6,20 +6,25 @@ $white: #fff;
 $color-primary: #58e1c1;
 $color-secondary: #51ddfc;
 $color-text: #777;
+$color-frame: #ccc;
+
 
 // Fonts
 $base-font: 'Lato', sans-serif;
 $big-text: 300;
 
+
 // Layout
 $flex-b: 100%;
+
+
+//  Styles
+$btn-radius: 5px;
 
 // Theme colors
 
 
 // Breakpoints
-$breakpoints: (
-        "sm": 576px,
-        "lg": 768px,);
+$breakpoints: ("lg": 768px,);
 
 
