@@ -3,20 +3,12 @@
 // ================
 
 //Utilities
-@import "utilities/variables",
-        "utilities/mixins",
-        "utilities/index";
+@import "utilities/index";
 
 //Base Styles
-@import "base/normalize",
-        "base/typography",
-        "base/index";
+@import "base/index";
 
 
 //Component Styles
-@import "components/nav",
-        "components/bttns",
-        "components/from",
-        "components/grid",
-        "components/index";
+@import "components/index";
 
