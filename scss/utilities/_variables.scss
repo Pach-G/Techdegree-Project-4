@@ -11,7 +11,6 @@ $color-frame: #ccc;
 
 // Fonts
 $base-font: 'Lato', sans-serif;
-$big-text: 300;
 
 
 // Layout
@@ -30,9 +29,10 @@ $buttons: (
 
 // Theme colors
 //Todo transfer all col-# coor value to $themes variable
-$themes: (
-  "col-1": #927bc1,
-);
+//$themes: (
+//  "col-1": #927bc1,
+//        //"col-"
+//);
 
 // Breakpoints
 $breakpoints: ("lg": 768px,);

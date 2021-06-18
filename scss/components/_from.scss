@@ -7,10 +7,9 @@
 }
 
 .input{
-  @include center($top: 10px);
+  @include center($top: 10px, $pad: 10px);
   width: 94%;
   border: none;
-  padding: 10px;
   border-bottom: 5px solid $color-primary;
 }
 

@@ -22,25 +22,21 @@ a {
 /* ============================================= */
 
 .headline-primary {
-  color: $color-primary;
-  margin-left: 10px;
+  @include font-style($color-primary, $font-w: null, $margin-l: 10px);
 }
 
 .headline-secondary {
-  font-weight: $big-text;
-  color: $color-text;
+  @include font-style($color-text);
 }
 
 .link {
-  color: $color-secondary;
-  font-weight: 700;
+  @include font-style($color-secondary, $font-w: 700);
 }
 
 .blockquote {
+  @include font-style($color: null, $margin-l: 20px);
   font-size: 1.5em;
-  font-weight: $big-text;
   font-style: italic;
-  margin-left: 20px;
   padding-left: 20px;
   border-left: 8px solid $color-primary;
   border-radius: $btn-radius;

@@ -1,17 +1,26 @@
 
 //    Mixins
 // ==============
-@mixin center($max-w: null, $top: null, $block: block) {
+@mixin center($max-w: null, $top: null, $block: block, $pad: null) {
   max-width: $max-w;
   margin-top: $top;
   display: $block;
   margin-left: auto;
   margin-right: auto;
+  padding: $pad;
+  @content;
 }
 
 @mixin lighten() {
   $buttons: map-get();
   $lighten: lighten($color, 15%);
+}
+
+@mixin font-style($color, $font-w: 300, $margin-l: null){
+  color: $color;
+  font-weight: $font-w;
+  margin-left: $margin-l;
+  @content
 }
 
 // Media queries
