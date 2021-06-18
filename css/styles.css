@@ -397,6 +397,11 @@ a {
   }
 }
 
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .row {
   display: flex;
   flex-direction: column;
@@ -610,11 +615,6 @@ a {
 }
 
 @media (min-width: 768px) {
-  .centered {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .col-1 {
     flex-basis: 8.33%;
   }

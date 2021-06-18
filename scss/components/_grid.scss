@@ -9,6 +9,10 @@
   }
 }
 
+.centered {
+  @include center($block: null);
+}
+
 .row {
   display: flex;
   flex-direction: column;

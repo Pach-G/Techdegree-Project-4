@@ -9,6 +9,10 @@
   margin-right: auto;
 }
 
+@mixin lighten() {
+  $buttons: map-get();
+  $lighten: lighten($color, 15%);
+}
 
 // Media queries
 

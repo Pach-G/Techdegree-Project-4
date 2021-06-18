@@ -1,15 +1,15 @@
 // Media Queries
 // =================
-
+//Todo transfer @media queries to sub-folders
 @include mq('lg') {
 
   //.container {
   //  @include center(1400px);
   //}
 
-  .centered {
-    @include center($block: null);
-  }
+  //.centered {
+  //  @include center($block: null);
+  //}
 
   //.row {
   //  flex-direction: row;

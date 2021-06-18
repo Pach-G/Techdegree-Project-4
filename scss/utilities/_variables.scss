@@ -20,9 +20,19 @@ $flex-b: 100%;
 
 //  Styles
 $btn-radius: 5px;
+$buttons: (
+        "default": $color-secondary,
+        "erorr": #e4757a,
+        "info": #927bc1,
+        "success": #63cc82,
+        "warning": #fd7856,
+);
 
 // Theme colors
-
+//Todo transfer all col-# coor value to $themes variable
+$themes: (
+  "col-1": #927bc1,
+);
 
 // Breakpoints
 $breakpoints: ("lg": 768px,);
