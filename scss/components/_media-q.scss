@@ -3,29 +3,6 @@
 //Todo transfer @media queries to sub-folders
 @include mq('lg') {
 
-  //.container {
-  //  @include center(1400px);
-  //}
-
-  //.centered {
-  //  @include center($block: null);
-  //}
-
-  //.row {
-  //  flex-direction: row;
-  //}
-
-  //[class^=col] {
-  //  display: flex;
-  //  justify-content: center;
-  //  margin-top: 0;
-  //  align-items: center;
-  //}
-
-  //[class^=col] + [class^=col] {
-  //  margin-left: 10px;
-  //}
-
   .col-1 {
     flex-basis: 8.33%;
   }
@@ -73,27 +50,5 @@
   .col-12 {
     flex-basis: $flex-b;
   }
-
-  //.nav {
-  //  flex-direction: row;
-  //  justify-content: flex-end;
-  //  align-items: center;
-    //&-link {
-    //  flex-basis: 100px;
-    //}
-  //}
-
-  //.btn {
-  //  padding: 10px 30px;
-  //}
-
-  //.btn + .btn {
-  //  margin-left: 10px;
-  //}
-
-  //.logo {
-  //  margin-left: initial;
-  //  margin-right: initial;
-  //}
 
 }

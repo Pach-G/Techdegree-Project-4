@@ -10,30 +10,22 @@
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: $btn-radius;
+  @each $btn-name, $btn-color in $btns{
+    &.#{$btn-name} {
+      background-color: $btn-color;
+    }
+  }
+  @each $btn-name, $btn-color in $btns{
+    $color-light: lighten($btn-color, 25%);
+
+    &.#{$btn-name}:hover {
+      background-color: $color-light;
+    }
+  }
   @include mq("lg") {
     padding: 10px 30px;
     & + & {
       margin-left: 10px;
     }
   }
-}
-
-.default {
-  background-color: $color-secondary;
-}
-
-.error {
-  background-color: #e4757a;
-}
-
-.info {
-  background-color: #927bc1;
-}
-
-.success {
-  background-color: #63cc82;
-}
-
-.warning {
-  background-color: #fd7856;
 }

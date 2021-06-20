@@ -39,9 +39,9 @@
   }
 }
 
-@each $theme, $color-btn in $themes{
+@each $theme, $btn-color in $themes{
   .#{$theme}.theme{
-  background-color: $color-btn;
+  background-color: $btn-color;
 }
 }
 
