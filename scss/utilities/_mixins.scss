@@ -1,6 +1,7 @@
 
 //    Mixins
 // ==============
+
 @mixin center($max-w: null, $top: null, $block: block, $pad: null) {
   max-width: $max-w;
   margin-top: $top;
@@ -11,17 +12,49 @@
   @content;
 }
 
-@mixin lighten() {
-  $buttons: map-get();
-  $lighten: lighten($color, 15%);
-}
+//@mixin themes($map) {
+//  @if hover == true {
+//  @each $theme, $color in $map {
+//    &-#{$theme} {
+//      color: $color;
+//    }
+//  }
+//}
+//}
+//@mixin btn-lighten($color){
+//  background-color: $color;
+//  &:hover{
+//    background-color: lighten($color, 15%);
+//  }
+//}
 
-@mixin font-style($color, $font-w: 300, $margin-l: null){
-  color: $color;
+//@mixin btn-lighten() {
+//  $value: map-get($btns, $btn-color);
+//  $color-light: lighten($btn-color, 25%);
+//  @if hover == true {
+//    color: $color-light;
+//  }
+//}
+
+//colors
+//Todo: create $theme & $color variables.
+//@mixin themes($themes) {
+//  @each $theme, $color in $themes {
+//    &-#{$theme} {
+//      color: $color;
+//    }
+//  }
+//}
+
+// Font Styles
+
+@mixin font-style($font-color, $font-w: 300, $margin-l: null) {
+  color: $font-color;
   font-weight: $font-w;
   margin-left: $margin-l;
   @content
 }
+
 
 // Media queries
 

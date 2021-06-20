@@ -34,7 +34,7 @@ a {
 }
 
 .blockquote {
-  @include font-style($color: null, $margin-l: 20px);
+  @include font-style($font-color: null, $margin-l: 20px);
   font-size: 1.5em;
   font-style: italic;
   padding-left: 20px;
