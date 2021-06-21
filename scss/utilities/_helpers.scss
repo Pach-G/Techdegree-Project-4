@@ -1,7 +1,7 @@
 // Functions
 // =================
 
-@function calc-percentage($i){
+@function calc-per($i){
 
   @return round(10000/ 12 * $i) * 0.01%;
 }

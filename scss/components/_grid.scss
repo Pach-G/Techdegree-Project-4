@@ -50,7 +50,7 @@
 
 @for $i from 1 to 12 {
   .col-#{$i}{
-    flex-basis: calc-percentage($i);
+    flex-basis: calc-per($i);
   }
 }
 

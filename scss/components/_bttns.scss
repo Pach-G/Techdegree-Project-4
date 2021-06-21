@@ -14,13 +14,15 @@
     &.#{$btn-name} {
       background-color: $btn-color;
     }
-  }
-  @each $btn-name, $btn-color in $btns{
-    $color-light: lighten($btn-color, 25%);
 
-    &.#{$btn-name}:hover {
-      background-color: $color-light;
-    }
+   $color-light: lighten($btn-color, 25%);
+   
+   &.#{$btn-name}:hover {
+     background-color: $color-light;
+     transition-delay: .1s;
+     transition-duration: .2s;
+     transition-timing-function: ease-in;
+   }
   }
 
   @include mq("lg") {
