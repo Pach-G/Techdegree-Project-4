@@ -10,7 +10,9 @@
 }
 
 .centered {
-  @include center($block: null);
+  @include mq("lg"){
+    @include center($block: null);
+  }
 }
 
 .row {
@@ -33,6 +35,7 @@
     justify-content: center;
     margin-top: 0;
     align-items: center;
+
     & + & {
       margin-left: 10px;
     }
@@ -45,7 +48,15 @@
 }
 }
 
+@for $i from 1 to 12 {
+  .col-#{$i}{
+    flex-basis: calc-percentage($i);
+  }
+}
+
+
 .card {
   flex-basis: $flex-b;
 }
+
 

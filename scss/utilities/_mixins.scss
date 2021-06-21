@@ -12,40 +12,6 @@
   @content;
 }
 
-//@mixin themes($map) {
-//  @if hover == true {
-//  @each $theme, $color in $map {
-//    &-#{$theme} {
-//      color: $color;
-//    }
-//  }
-//}
-//}
-//@mixin btn-lighten($color){
-//  background-color: $color;
-//  &:hover{
-//    background-color: lighten($color, 15%);
-//  }
-//}
-
-//@mixin btn-lighten() {
-//  $value: map-get($btns, $btn-color);
-//  $color-light: lighten($btn-color, 25%);
-//  @if hover == true {
-//    color: $color-light;
-//  }
-//}
-
-//colors
-//Todo: create $theme & $color variables.
-//@mixin themes($themes) {
-//  @each $theme, $color in $themes {
-//    &-#{$theme} {
-//      color: $color;
-//    }
-//  }
-//}
-
 // Font Styles
 
 @mixin font-style($font-color, $font-w: 300, $margin-l: null) {
