@@ -24,7 +24,7 @@
 
 // Media queries
 
-@mixin mq($break) {
+@mixin media-q($break) {
   $value: map-get($breakpoints, $break);
 
   @if $value == null {

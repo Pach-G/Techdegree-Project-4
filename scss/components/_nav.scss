@@ -7,7 +7,7 @@
   flex-basis: $flex-b;
   display: flex;
   flex-direction: column;
-  @include mq("lg") {
+  @include media-q("lg") {
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
@@ -20,7 +20,7 @@
     width: 100%;
     transition: background-color .2s ease-in-out,
     color .2s ease-in-out;
-    @include mq("lg"){
+    @include media-q("lg"){
       flex-basis: 100px;
     }
     &:hover {

@@ -427,7 +427,6 @@ a {
     display: flex;
     justify-content: center;
     margin-top: 0;
-    align-items: center;
   }
   [class^=col] + [class^=col] {
     margin-left: 10px;
@@ -567,7 +566,7 @@ a {
 /* ============================================= */
 /*              Buttons                          */
 /* ============================================= */
-.btn {
+.bttn {
   margin-top: 15px;
   width: 100%;
   color: #fff;
@@ -576,56 +575,56 @@ a {
   text-transform: uppercase;
   border-radius: 5px;
 }
-.btn.default {
+.bttn.default {
   background-color: #51ddfc;
 }
-.btn.default:hover {
+.bttn.default:hover {
   background-color: #cef5fe;
   transition-delay: 0.1s;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
-.btn.error {
+.bttn.error {
   background-color: #e4757a;
 }
-.btn.error:hover {
+.bttn.error:hover {
   background-color: #f9e0e1;
   transition-delay: 0.1s;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
-.btn.info {
+.bttn.info {
   background-color: #927bc1;
 }
-.btn.info:hover {
+.bttn.info:hover {
   background-color: #dad2ea;
   transition-delay: 0.1s;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
-.btn.success {
+.bttn.success {
   background-color: #63cc82;
 }
-.btn.success:hover {
+.bttn.success:hover {
   background-color: #c3ebcf;
   transition-delay: 0.1s;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
-.btn.warning {
+.bttn.warning {
   background-color: #fd7856;
 }
-.btn.warning:hover {
+.bttn.warning:hover {
   background-color: #feddd4;
   transition-delay: 0.1s;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
 @media (min-width: 768px) {
-  .btn {
+  .bttn {
     padding: 10px 30px;
   }
-  .btn + .btn {
+  .bttn + .bttn {
     margin-left: 10px;
   }
 }
